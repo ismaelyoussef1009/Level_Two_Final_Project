@@ -1,1 +1,285 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header .restaurant_header {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+header .restaurant_header .header_icon_text {
+  display: flex;
+  padding: 20px;
+  width: 30%;
+  gap: 80px;
+}
+header .restaurant_header .header_icon_text i {
+  font-size: 25px;
+  padding-left: 20px;
+}
+header .restaurant_header .header_icon_text p {
+  font-size: 25px;
+  padding-left: 20px;
+  font-weight: 500;
+}
+header .restaurant_header .header_search {
+  width: 55%;
+  margin: 10px 70px 0 0;
+}
+header .restaurant_header .header_search i {
+  font-size: 22px;
+  top: 16px;
+  padding-left: 20px;
+  position: relative;
+  z-index: 1;
+}
+header .restaurant_header .header_search input {
+  width: 100%;
+  height: 5.5vh;
+  padding-left: 60px;
+  margin-top: -17px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background: lightgray;
+  border: none;
+  outline: none;
+}
+header .restaurant_header .header_search input::-moz-placeholder {
+  color: rgb(186, 182, 182);
+}
+header .restaurant_header .header_search input:-ms-input-placeholder {
+  color: rgb(186, 182, 182);
+}
+header .restaurant_header .header_search input::placeholder {
+  color: rgb(186, 182, 182);
+}
+header .restaurant_header_two {
+  width: 25%;
+  display: flex;
+  padding-left: 16%;
+  gap: 35px;
+  padding-top: 24px;
+}
+header .restaurant_header_two .profile_pic i {
+  font-size: 28px;
+}
+header .restaurant_header_two .right_user_icon button {
+  width: 100%;
+  padding: 13px;
+  margin-top: -7px;
+  border-radius: 15px;
+  background-color: orange;
+  border: none;
+}
+
+section {
+  display: flex;
+}
+section .main_section_one {
+  width: 75%;
+  margin-top: 30px;
+}
+section .main_section_one .resto_info {
+  display: flex;
+  width: 92%;
+  margin-left: 3%;
+  background: rgba(240, 228, 135, 0.171);
+  border-radius: 20px;
+}
+section .main_section_one .resto_info .resto_image {
+  width: 25%;
+  padding-left: 80px;
+  border-radius: 30px;
+}
+section .main_section_one .resto_info .resto_image img {
+  width: 100%;
+  height: 95%;
+  margin-top: 13px;
+  border-radius: 30px;
+}
+section .main_section_one .resto_info .resto_info_detail {
+  display: flex;
+  width: 50%;
+  margin-left: 10px;
+  padding-top: 80px;
+}
+section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph {
+  margin: 5px auto;
+  padding-left: 150px;
+}
+section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph h1 {
+  color: rgb(222, 83, 8);
+  font-size: 30px;
+  font-weight: 900;
+}
+section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph .resto_info_sub_paragraph {
+  display: flex;
+}
+section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph .resto_info_sub_paragraph .resto_info_image {
+  width: 7%;
+  height: 2%;
+  margin-left: 11px;
+}
+section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph .resto_info_sub_paragraph .resto_info_image img {
+  width: 100%;
+  height: 100%;
+}
+section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph p {
+  color: rgb(124, 120, 120);
+}
+section .main_section_one .resto_info .resto_info_more {
+  display: flex;
+  gap: 15px;
+  margin: 16% 0 0 120px;
+}
+section .main_section_one .resto_info .resto_info_more .resto_info_link button {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+}
+section .main_section_one .resto_info .resto_info_more .resto_info_link button a {
+  text-decoration: none;
+  color: orange;
+}
+section .main_section_one .resto_info .resto_info_more .resto_info_icon {
+  margin-top: 2px;
+}
+section .main_section_one .resto_info .resto_info_more .resto_info_icon i {
+  color: orange;
+}
+section .main_section_one .special_offer {
+  display: flex;
+  width: 92%;
+  margin-left: 3%;
+  margin-top: 50px;
+}
+section .main_section_one .special_offer .special_item {
+  display: flex;
+  width: 50%;
+}
+section .main_section_one .special_offer .special_item span {
+  font-size: 35px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+section .main_section_one .special_offer .special_item .special_hamburger {
+  width: 8%;
+  height: 85%;
+  margin-top: 9px;
+  margin-left: 10px;
+}
+section .main_section_one .special_offer .special_item .special_hamburger img {
+  width: 100%;
+  height: 100%;
+}
+section .main_section_one .special_offer .special_delivery {
+  display: flex;
+  width: 20%;
+  background: pink;
+  margin-left: 385px;
+  padding-top: 16px;
+  gap: 15px;
+  border-radius: 30px;
+}
+section .main_section_one .special_offer .special_delivery .delivery_icon_one {
+  font-size: 16px;
+  margin-left: 19px;
+}
+section .main_section_one .special_offer .special_delivery .delivery_icon_one i {
+  color: white;
+}
+section .main_section_one .special_offer .special_delivery .delivery_text span {
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+}
+section .main_section_one .special_offer .special_delivery .delivery_icon_two {
+  font-size: 16px;
+}
+section .main_section_one .special_offer .special_delivery .delivery_icon_two i {
+  color: white;
+}
+section .main_section_one .menu_section {
+  width: 92%;
+  margin-left: 3%;
+  margin-top: 60px;
+  display: flex;
+  gap: 18px;
+}
+section .main_section_one .menu_section .sub_menu_section {
+  width: 8%;
+  height: 22vh;
+  background: rgb(220, 197, 29);
+  border-radius: 80px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+section .main_section_one .menu_section .sub_menu_section .menu_section_image {
+  width: 75%;
+  height: 38%;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+section .main_section_one .menu_section .sub_menu_section .menu_section_image i {
+  margin: 10px 0 0 16px;
+  font-size: 30px;
+}
+section .main_section_one .menu_section .sub_menu_section .menu_section_text {
+  margin: 35px 0 0 21px;
+}
+section .main_section_one .menu_section .sub_menu_section .menu_section_text span {
+  font-size: 18px;
+}
+section .main_section_one .menu_section .sub_menu_section .man_menu_section_text {
+  margin: 35px 0 0 16px;
+}
+section .main_section_one .menu_section .sub_menu_section .man_menu_section_text span {
+  font-size: 18px;
+}
+section .main_section_one .menu_section .sub_menu_section .Barbecue_menu_section_text {
+  margin: 35px 0 0 10px;
+}
+section .main_section_one .menu_section .sub_menu_section .Barbecue_menu_section_text span {
+  font-size: 18px;
+}
+section .main_section_one .menu_section .sub_menu_section .fish_menu_section_text {
+  margin: 35px 0 0 14px;
+}
+section .main_section_one .menu_section .sub_menu_section .fish_menu_section_text span {
+  font-size: 18px;
+}
+section .main_section_one .menu_section .sub_menu_section .Shrimp_menu_section_text {
+  margin: 35px 0 0 17px;
+}
+section .main_section_one .menu_section .sub_menu_section .Shrimp_menu_section_text span {
+  font-size: 18px;
+}
+section .main_section_one .menu_section button {
+  width: 44px;
+  height: 5.5vh;
+  margin: 71px 0 0 87px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+section .main_section_one .menu_section button:hover {
+  background: orange;
+}
+section .main_section_two {
+  width: 25%;
+  background: blanchedalmond;
+  margin-top: 30px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+header{
+    // background: red;
+    display: flex;
+    // gap: 60%;
+    justify-content: space-between;
+    position: relative;
+    .restaurant_header{
+        width: 75%;
+        display: flex;
+        justify-content: space-between; 
+        // background: red;
+        .header_icon_text{
+            display: flex;
+            padding: 20px;
+            // background: blue;
+            width: 30%;
+            gap: 80px;
+            i{
+                font-size: 25px;
+                padding-left: 20px;
+            }
+            p{
+                font-size: 25px;
+                padding-left: 20px;
+                font-weight: 500;
+            }
+            
+        }
+        .header_search{
+            width: 55%;
+            margin:10px 70px 0 0;
+            i{
+                font-size: 22px;
+                top: 16px;
+                padding-left: 20px;
+                position: relative;
+                z-index: 1;
+            }
+            input{
+                width: 100%;
+                height: 5.5vh;
+                padding-left: 60px;
+                margin-top: -17px;
+                border-radius: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                color: black;
+                background: lightgray;
+                &::placeholder{
+                    color: rgb(186, 182, 182);
+                }
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    .restaurant_header_two{
+        // background: blue;
+        width: 25%;
+        display: flex;
+        padding-left: 16%;
+        gap: 35px;
+        padding-top: 24px;
+        .profile_pic{
+            i{
+                font-size: 28px;
+            }
+        }
+        .right_user_icon{
+            button{
+                width: 100%;
+                padding: 13px;
+                margin-top:  -7px;
+                border-radius: 15px;
+                background-color: orange;
+                border: none;
+            }
+        }
+    }
+}

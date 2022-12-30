@@ -1,0 +1,235 @@
+section{
+    // background: red;
+    display: flex;
+    .main_section_one{
+        width: 75%;
+        // background: blue;
+        margin-top: 30px;
+        .resto_info{
+            display: flex;
+            width: 92%;
+            margin-left: 3%;
+            background: rgba(240, 228, 135, 0.171);
+            border-radius: 20px;
+            .resto_image{
+                width: 25%;
+                padding-left: 80px;
+                border-radius: 30px;
+                img{
+                    width: 100%;
+                    height: 95%;
+                    margin-top: 13px;
+                    border-radius: 30px;
+                }
+
+            }
+            .resto_info_detail{
+                display: flex;
+                width: 50%;
+                // background: red;
+                margin-left: 10px;
+                padding-top: 80px;
+                // line-height: 10px;
+                .resto_info_paragraph{
+                    margin: 5px auto;
+                    padding-left: 150px;
+                    
+                    h1{
+                        color: rgb(222, 83, 8);
+                        font-size: 30px;
+                        font-weight: 900;
+                    }
+                    .resto_info_sub_paragraph{
+                        display: flex;
+                        .resto_info_image{
+                            width: 7%;
+                            height: 2%;
+                            margin-left: 11px;
+                            // background: rgb(189, 245, 23);
+                            img{
+                                width: 100%;
+                                height: 100%;
+                               
+                            }
+                        }
+                    }
+                    p{
+                        color: rgb(124, 120, 120);
+                    }
+                }
+            }
+            .resto_info_more{
+                display: flex;
+                gap: 15px;
+                margin: 16% 0 0 120px;
+                .resto_info_link{
+                    button{
+                        border: none;
+                        outline: none;
+                        background:none;
+                        font-size: 18px;
+                        a{
+                            text-decoration: none; 
+                            color: orange; 
+                        }
+                    }
+                }
+                .resto_info_icon{
+                    margin-top: 2px;
+                    i{
+                        color: orange;
+                    }
+                }
+            }
+        }
+        .special_offer{
+            display: flex;
+            width: 92%;
+            margin-left: 3%;
+            margin-top: 50px;
+            // background: palevioletred;
+            .special_item{
+                display: flex;
+                width: 50%;
+                // background: rgb(137, 182, 218);
+                span{
+                    font-size: 35px;
+                    font-weight: 700;
+                    margin-top: 10px;
+                }
+                .special_hamburger{
+                    width: 8%;
+                    height: 85%;
+                    margin-top: 9px;
+                    margin-left: 10px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            .special_delivery{
+                display: flex;
+                width: 20%;
+                background: pink;
+                margin-left: 385px;
+                padding-top: 16px;
+                gap: 15px;
+                border-radius: 30px;
+                .delivery_icon_one{
+                    font-size: 16px;
+                    margin-left: 19px;
+                    i{
+                        color: white;
+                    }
+                }
+                .delivery_text{
+                    span{
+                        font-size: 17px;
+                        font-weight: 400;
+                        color: white;
+                    } 
+                }
+                .delivery_icon_two{
+                    font-size: 16px;
+                    i{
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .menu_section{
+            width: 92%;
+            margin-left: 3%;
+            // background: blue;
+            margin-top: 60px;
+            display: flex;
+            gap: 18px;
+           
+            .sub_menu_section{
+                width: 8%;
+                height: 22vh;
+                background: rgb(220, 197, 29);
+                border-radius: 80px;
+                margin-top: 10px;
+                cursor: pointer;
+            //    &.active{
+            //     background-color: red;
+            //    }
+                .menu_section_image{
+                    width: 75%;
+                    height: 38%;
+                    background: white;
+                    border-radius: 50%;
+                    position: relative;
+                    top: 10px;
+                    left: 10px;
+                    
+                    i{
+                        margin: 10px 0 0 16px ;
+                        font-size: 30px;
+
+                    }
+                }
+                .menu_section_text{
+                    margin: 35px 0 0 21px;
+                    span{
+                        font-size:18px;
+                    }
+                    
+                }
+                .man_menu_section_text{
+                    margin: 35px 0 0 16px;
+                    span{
+                        font-size: 18px;
+                    }
+                }
+                .Barbecue_menu_section_text{
+                    margin: 35px 0 0 10px;
+                    span{
+                        font-size: 18px;
+                    }
+                }
+                .fish_menu_section_text{
+                    margin: 35px 0 0 14px;
+                    span{
+                        font-size: 18px;
+                    }
+                }
+                .Shrimp_menu_section_text{
+                    margin: 35px 0 0 17px;
+                    span{
+                        font-size: 18px;
+                    }
+                }
+                
+            }
+            button{
+                width: 44px;
+                height: 5.5vh;
+                margin: 71px 0 0 87px;
+                border-radius: 10px;
+                cursor: pointer;
+                border: none;
+                &:hover{
+                    background: orange;
+                }
+            }
+
+        }
+
+
+        // this is one
+    }
+
+
+
+
+
+    .main_section_two{
+        width: 25%;
+        background: blanchedalmond;
+        margin-top: 30px;
+    }
+}
