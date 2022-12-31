@@ -289,16 +289,16 @@ section .main_section_one .main_food {
 section .main_section_one .main_food .available_food {
   width: 30.6%;
   height: 25vh;
+  border-radius: 20px;
 }
 section .main_section_one .main_food .available_food .available_food_image {
   width: 100%;
   height: 100%;
-  border: 1px solid lightgray;
 }
 section .main_section_one .main_food .available_food .available_food_image img {
   width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
+  border-radius: 20px;
 }
 section .main_section_two {
   width: 25%;

@@ -230,16 +230,16 @@ section{
                 width: 30.6%;
                 height: 25vh;
                 // background: red;
-                // border-radius: 20px;
+                border-radius: 20px;
                 .available_food_image{
                     width: 100%;
                     height: 100%;
                     // background: palevioletred;
-                    border: 1px solid lightgray;
+                    // border: 1px solid lightgray;
                     img{
                         width: 100%;
                         height: 100%;
-                        background-repeat: no-repeat;
+                        border-radius: 20px;
                     }
                 }
             }
