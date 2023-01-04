@@ -46,11 +46,16 @@ header{
                 font-weight: bold;
                 color: black;
                 background: lightgray;
+                transition: .5s; 
                 &::placeholder{
                     color: rgb(186, 182, 182);
                 }
                 border: none;
                 outline: none;
+
+                &:focus{
+                    background: white;   
+                }
             }
         }
     }

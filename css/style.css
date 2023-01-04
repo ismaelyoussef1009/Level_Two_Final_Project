@@ -50,6 +50,7 @@ header .restaurant_header .header_search input {
   font-weight: bold;
   color: black;
   background: lightgray;
+  transition: 0.5s;
   border: none;
   outline: none;
 }
@@ -61,6 +62,9 @@ header .restaurant_header .header_search input:-ms-input-placeholder {
 }
 header .restaurant_header .header_search input::placeholder {
   color: rgb(186, 182, 182);
+}
+header .restaurant_header .header_search input:focus {
+  background: white;
 }
 header .restaurant_header_two {
   width: 25%;
