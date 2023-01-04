@@ -21,6 +21,7 @@ header .restaurant_header .header_icon_text {
   gap: 80px;
 }
 header .restaurant_header .header_icon_text i {
+  cursor: pointer;
   font-size: 25px;
   padding-left: 20px;
 }
@@ -46,25 +47,25 @@ header .restaurant_header .header_search input {
   padding-left: 60px;
   margin-top: -17px;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
-  color: black;
-  background: lightgray;
+  color: rgba(95, 93, 93, 0.847);
+  background: #9EA1A1;
   transition: 0.5s;
   border: none;
   outline: none;
 }
 header .restaurant_header .header_search input::-moz-placeholder {
-  color: rgb(186, 182, 182);
+  color: #F5F8F3;
 }
 header .restaurant_header .header_search input:-ms-input-placeholder {
-  color: rgb(186, 182, 182);
+  color: #F5F8F3;
 }
 header .restaurant_header .header_search input::placeholder {
-  color: rgb(186, 182, 182);
+  color: #F5F8F3;
 }
 header .restaurant_header .header_search input:focus {
-  background: white;
+  background: #FFFFFF;
 }
 header .restaurant_header_two {
   width: 25%;
@@ -74,14 +75,16 @@ header .restaurant_header_two {
   padding-top: 24px;
 }
 header .restaurant_header_two .profile_pic i {
-  font-size: 28px;
+  cursor: pointer;
+  font-size: 29px;
 }
 header .restaurant_header_two .right_user_icon button {
+  cursor: pointer;
   width: 100%;
-  padding: 13px;
+  padding: 15px;
   margin-top: -7px;
   border-radius: 15px;
-  background-color: orange;
+  background-color: #FA801B;
   border: none;
 }
 
@@ -90,19 +93,20 @@ section {
 }
 section .main_section_one {
   width: 75%;
+  background: #F5F8F3;
   margin-top: 30px;
 }
 section .main_section_one .resto_info {
   display: flex;
   width: 92%;
   margin-left: 3%;
-  background: rgba(240, 228, 135, 0.171);
+  background: rgba(244, 149, 17, 0.5333333333);
   border-radius: 20px;
 }
 section .main_section_one .resto_info .resto_image {
   width: 25%;
-  padding-left: 80px;
-  border-radius: 30px;
+  padding-left: 30px;
+  border-radius: 20px;
 }
 section .main_section_one .resto_info .resto_image img {
   width: 100%;
@@ -114,36 +118,38 @@ section .main_section_one .resto_info .resto_info_detail {
   display: flex;
   width: 50%;
   margin-left: 10px;
-  padding-top: 80px;
+  padding-top: 155px;
 }
 section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph {
   margin: 5px auto;
-  padding-left: 150px;
+  padding-left: 90px;
 }
 section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph h1 {
-  color: rgb(222, 83, 8);
-  font-size: 30px;
+  color: #DE590B;
+  font-size: 35px;
   font-weight: 900;
 }
 section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph .resto_info_sub_paragraph {
   display: flex;
 }
 section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph .resto_info_sub_paragraph .resto_info_image {
-  width: 7%;
-  height: 2%;
-  margin-left: 11px;
+  width: 9%;
+  height: 4%;
+  margin-left: 10px;
 }
 section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph .resto_info_sub_paragraph .resto_info_image img {
   width: 100%;
   height: 100%;
 }
 section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph p {
-  color: rgb(124, 120, 120);
+  color: #9EA1A1;
+  font-weight: 500;
+  font-size: 18px;
 }
 section .main_section_one .resto_info .resto_info_more {
   display: flex;
   gap: 15px;
-  margin: 16% 0 0 120px;
+  margin: 26% 0 0 120px;
 }
 section .main_section_one .resto_info .resto_info_more .resto_info_link button {
   border: none;
@@ -153,13 +159,14 @@ section .main_section_one .resto_info .resto_info_more .resto_info_link button {
 }
 section .main_section_one .resto_info .resto_info_more .resto_info_link button a {
   text-decoration: none;
-  color: orange;
+  color: #FA801B;
 }
 section .main_section_one .resto_info .resto_info_more .resto_info_icon {
-  margin-top: 2px;
+  margin-top: 3px;
+  cursor: pointer;
 }
 section .main_section_one .resto_info .resto_info_more .resto_info_icon i {
-  color: orange;
+  color: #FA801B;
 }
 section .main_section_one .special_offer {
   display: flex;
@@ -189,7 +196,7 @@ section .main_section_one .special_offer .special_item .special_hamburger img {
 section .main_section_one .special_offer .special_delivery {
   display: flex;
   width: 20%;
-  background: pink;
+  background: #FA801B;
   margin-left: 385px;
   padding-top: 16px;
   gap: 15px;
@@ -198,20 +205,22 @@ section .main_section_one .special_offer .special_delivery {
 section .main_section_one .special_offer .special_delivery .delivery_icon_one {
   font-size: 16px;
   margin-left: 19px;
+  cursor: pointer;
 }
 section .main_section_one .special_offer .special_delivery .delivery_icon_one i {
-  color: white;
+  color: #FFFFFF;
 }
 section .main_section_one .special_offer .special_delivery .delivery_text span {
   font-size: 17px;
   font-weight: 400;
-  color: white;
+  color: #FFFFFF;
 }
 section .main_section_one .special_offer .special_delivery .delivery_icon_two {
   font-size: 16px;
+  cursor: pointer;
 }
 section .main_section_one .special_offer .special_delivery .delivery_icon_two i {
-  color: white;
+  color: #FFFFFF;
 }
 section .main_section_one .menu_section {
   width: 92%;
@@ -223,7 +232,7 @@ section .main_section_one .menu_section {
 section .main_section_one .menu_section .sub_menu_section {
   width: 8%;
   height: 22vh;
-  background: rgb(220, 197, 29);
+  background: #FFFFFF;
   border-radius: 80px;
   margin-top: 10px;
   cursor: pointer;
@@ -232,6 +241,7 @@ section .main_section_one .menu_section .sub_menu_section .menu_section_image {
   width: 75%;
   height: 38%;
   background: white;
+  border: 3px solid lightgray;
   border-radius: 50%;
   position: relative;
   top: 10px;
@@ -280,7 +290,7 @@ section .main_section_one .menu_section button {
   border: none;
 }
 section .main_section_one .menu_section button:hover {
-  background: orange;
+  background: #FA801B;
 }
 section .main_section_one .main_food {
   display: flex;
@@ -308,7 +318,7 @@ section .main_section_one .main_food .available_food .available_food_image img {
 section .main_section_one .main_food .available_food .available_food_image p {
   width: 24%;
   height: 18%;
-  background: rgb(234, 231, 231);
+  background: #DBDED9;
   margin-top: -34px;
   margin-left: 0px;
   position: absolute;
@@ -329,7 +339,7 @@ section .main_section_one .main_food .available_food .available_food_description
   gap: 10px;
 }
 section .main_section_one .main_food .available_food .available_food_description .available_food_description_sub2 span {
-  color: rgb(169, 167, 167);
+  color: #9EA1A1;
 }
 section .main_section_two {
   width: 25%;

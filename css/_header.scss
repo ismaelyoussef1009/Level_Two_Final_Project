@@ -16,6 +16,7 @@ header{
             width: 30%;
             gap: 80px;
             i{
+                @include button;
                 font-size: 25px;
                 padding-left: 20px;
             }
@@ -42,19 +43,20 @@ header{
                 padding-left: 60px;
                 margin-top: -17px;
                 border-radius: 10px;
-                font-size: 20px;
+                font-size: 15px;
                 font-weight: bold;
-                color: black;
-                background: lightgray;
+                color: rgba(95, 93, 93, 0.847);
+                background: $pColor;
                 transition: .5s; 
                 &::placeholder{
-                    color: rgb(186, 182, 182);
+                    color: $mainDivColorTwo;
                 }
                 border: none;
                 outline: none;
 
                 &:focus{
-                    background: white;   
+                    background: $mainColorTwo 
+                      
                 }
             }
         }
@@ -68,16 +70,18 @@ header{
         padding-top: 24px;
         .profile_pic{
             i{
-                font-size: 28px;
+                @include button;
+                font-size: 29px;
             }
         }
         .right_user_icon{
             button{
+                @include button;
                 width: 100%;
-                padding: 13px;
+                padding: 15px;
                 margin-top:  -7px;
                 border-radius: 15px;
-                background-color: orange;
+                background-color:$buttonColorTwo;
                 border: none;
             }
         }

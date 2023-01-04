@@ -3,3 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+$mainColorOne: #f4951188;
+$mainColorTwo: #FFFFFF;
+$mainColorTree: #8B27C7;
+$buttonColorOne:#FA4125;
+$buttonColorTwo:#FA801B;
+$buttonColorTree:#88BD00;
+$mainDivColorOne:#DBDED9;
+$mainDivColorTwo:#F5F8F3;
+$h1Color:#DE590B;
+$pColor:#9EA1A1;
+
+@mixin button{
+    cursor: pointer;
+}
+
+@mixin resetDiv{
+    width: 92%;
+    margin-left: 3%;
+}
+
+
