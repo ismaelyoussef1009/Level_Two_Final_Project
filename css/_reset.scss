@@ -23,4 +23,66 @@ $pColor:#9EA1A1;
     margin-left: 3%;
 }
 
+@mixin foodReset{
+    display: flex;
+    gap: 39px;
+    margin-top: 40px;
+    margin-bottom: 110px;
+}
+
+@mixin mainFood{
+    .available_food{
+        width: 30.6%;
+        height: 25vh;
+        // background: red;
+        border-radius: 20px;
+        transition: 0.5s;
+        &:hover{
+           transform: scale(1.2);
+           z-index: 1; 
+        }
+        .available_food_image{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+            p{
+                width: 24%;
+                height: 18%;
+                background:$mainDivColorOne;
+                margin-top: -34px;
+                margin-left: 0px;
+                position: absolute;
+                text-align: center;
+                padding-top: 8px;
+                border-bottom-left-radius:10px;
+                border-top-right-radius: 10px;
+            }
+        }
+        .available_food_description{
+            margin-top: 12px;
+            .available_food_description_sub1{
+                h1{
+                    font-size: 19px;
+                }
+            }
+            .available_food_description_sub2{
+                display: flex;
+                margin-top: 10px;
+                gap: 10px;
+                p{
+                    
+                }
+                span{
+                    color: $pColor;
+                }
+            }
+        }
+    }
+}
+
 

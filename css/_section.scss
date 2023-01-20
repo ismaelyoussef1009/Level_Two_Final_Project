@@ -4,22 +4,24 @@ section{
     .main_section_one{
         width: 75%;
         background: $mainDivColorTwo;
-        margin-top: 30px;
+        margin-top: 60px;
+
+
         .resto_info{
             display: flex;
             @include resetDiv;
             background:$mainColorOne;
-            border-radius: 20px;
+            border-radius: 15px;
             .resto_image{
                 width: 25%;
-                padding-left: 30px;
+                padding-left: 5px;
                 border-radius: 20px;
                 // background: red;
                 img{
                     width: 100%;
-                    height: 95%;
-                    margin-top: 13px;
-                    border-radius: 30px;
+                    height: 96%;
+                    margin-top: 6px;
+                    border-radius: 15px;
                 }
 
             }
@@ -27,8 +29,8 @@ section{
                 display: flex;
                 width: 50%;
                 // background: red;
-                margin-left: 10px;
-                padding-top: 155px;
+                margin-left: 8px;
+                padding-top: 110px;
                 // line-height: 10px;
                 .resto_info_paragraph{
                     margin: 5px auto;
@@ -54,7 +56,7 @@ section{
                         }
                     }
                     p{
-                        color:$pColor;
+                        color:$mainDivColorTwo;
                         font-weight: 500;
                         font-size: 18px;
                     }
@@ -63,7 +65,17 @@ section{
             .resto_info_more{
                 display: flex;
                 gap: 15px;
-                margin: 26% 0 0 120px;
+                margin: 20% 0 0 90px;
+                transition: 0.5s;
+                // @include button;
+                &:hover{
+                    .resto_info_icon{
+                        i{
+                            transform: translateX(15px);
+                            color: white;
+                        }
+                    } 
+                }
                 .resto_info_link{
                     button{
                         border: none;
@@ -85,6 +97,8 @@ section{
                 }
             }
         }
+
+
         .special_offer{
             display: flex;
             @include resetDiv;
@@ -100,10 +114,10 @@ section{
                     margin-top: 10px;
                 }
                 .special_hamburger{
-                    width: 8%;
+                    width: 8.5%;
                     height: 85%;
-                    margin-top: 9px;
-                    margin-left: 10px;
+                    margin-top: 9.6px;
+                    margin-left: 8px;
                     img{
                         width: 100%;
                         height: 100%;
@@ -143,23 +157,26 @@ section{
             }
         }
 
+
         .menu_section{
             @include resetDiv;
             // background: blue;
             margin-top: 60px;
             display: flex;
             gap: 18px;
-           
             .sub_menu_section{
                 width: 8%;
                 height: 22vh;
-                background: $mainColorTwo;
-                border-radius: 80px;
+                // background: $mainColorTwo;
+                background: red;
+                border-radius: 25px;
+                // border: 1px solid palevioletred;
                 margin-top: 10px;
+                &:hover{
+                    background: rgb(16, 157, 11);
+                    transform: translateY(-20px);
+                }
                 @include button;
-            //    &.active{
-            //     background-color: red;
-            //    }
                 .menu_section_image{
                     width: 75%;
                     height: 38%;
@@ -169,7 +186,6 @@ section{
                     position: relative;
                     top: 10px;
                     left: 10px;
-                    
                     i{
                         margin: 10px 0 0 16px ;
                         font-size: 30px;
@@ -202,7 +218,14 @@ section{
                     }
                 }
                 .Shrimp_menu_section_text{
-                    margin: 35px 0 0 17px;
+                    margin: 35px 0 0 23px;
+                    span{
+                        font-size: 18px;
+                    }
+                }
+
+                .drinks_menu_section_text{
+                    margin: 35px 0 0 18px;
                     span{
                         font-size: 18px;
                     }
@@ -222,81 +245,160 @@ section{
             }
 
         }
-        .main_food{
-            display: flex;
-            gap: 39px;
+        
+        
+        // Category of foods 
+        .global_food{
+            // display: none;
             @include resetDiv;
             // background: rgb(79, 234, 36);
-            margin-top: 80px;
-            margin-bottom: 110px;
-            .available_food{
-                width: 30.6%;
-                height: 25vh;
-                // background: red;
-                border-radius: 20px;
-                .available_food_image{
-                    width: 100%;
-                    height: 100%;
-                    position: relative;
-                    // background: palevioletred;
-                    // border: 1px solid lightgray;
-                    
-                    img{
+            .main_food{
+                display: flex;
+                gap: 39px;
+                margin-top: 80px;
+                margin-bottom: 110px;
+                .available_food{
+                    width: 30.6%;
+                    height: 25vh;
+                    // background: red;
+                    border-radius: 20px;
+                    transition: 0.5s;
+                    &:hover{
+                       transform: scale(1.2);
+                       z-index: 1; 
+                    }
+                    .available_food_image{
                         width: 100%;
                         height: 100%;
-                        border-radius: 20px;
-                       
-
-                    }
-                    p{
-                        width: 24%;
-                        height: 18%;
-                        // color: red;
-                        background:$mainDivColorOne;
-                        margin-top: -34px;
-                        margin-left: 0px;
-                        position: absolute;
-                        text-align: center;
-                        // border-radius: 10px;
-                        padding-top: 8px;
-                        border-bottom-left-radius:10px;
-                        border-top-right-radius: 10px;
-
-
-                    }
-                }
-                .available_food_description{
-                    margin-top: 12px;
-                    .available_food_description_sub1{
-                        h1{
-                            font-size: 19px;
+                        position: relative;
+                        // background: palevioletred;
+                        // border: 1px solid lightgray;
+                        
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 20px;
                         }
-                    }
-                    .available_food_description_sub2{
-                        display: flex;
-                        margin-top: 10px;
-                        gap: 10px;
                         p{
-                            
+                            width: 24%;
+                            height: 18%;
+                            background:$mainDivColorOne;
+                            margin-top: -34px;
+                            margin-left: 0px;
+                            position: absolute;
+                            text-align: center;
+                            padding-top: 8px;
+                            border-bottom-left-radius:10px;
+                            border-top-right-radius: 10px;
                         }
-                        span{
-                            color: $pColor;
+                    }
+                    .available_food_description{
+                        margin-top: 12px;
+                        .available_food_description_sub1{
+                            h1{
+                                font-size: 19px;
+                            }
+                        }
+                        .available_food_description_sub2{
+                            display: flex;
+                            margin-top: 10px;
+                            gap: 10px;
+                            p{
+                                
+                            }
+                            span{
+                                color: $pColor;
+                            }
                         }
                     }
                 }
             }
         }
 
+        .pizza_food{
+             display: none;
+            @include resetDiv;
+            .pizaa{
+                @include foodReset;
+                @include mainFood;
+            }
+        }
+
+        .asian_food{
+            // display: none;
+            @include resetDiv;
+            // background: rgb(79, 234, 36);
+            .Asian{
+                @include foodReset;
+                @include mainFood;
+            }
+        }
+
+        .burger_food{
+            @include resetDiv;
+            display: none;
+            .burger{
+                @include foodReset;
+                @include mainFood;
+            }
+        }
+
+        .Barbecue_food{
+            display: none;
+            @include resetDiv;
+            .Barbecue{
+                @include foodReset;
+                @include mainFood;
+            }
+        }
+
+        .dessert_food{
+            display: none;
+            @include resetDiv;
+            .dessert{
+                @include foodReset;
+                @include mainFood;
+            }
+        }
+
+        .sea_food{
+            display: none;
+            @include resetDiv;
+            .seafood{
+                @include foodReset;
+                @include mainFood;
+            }
+        }
+
+        .salad_food{
+            @include resetDiv;
+            display: none;
+            .salad{
+                @include foodReset;
+                @include mainFood; 
+            }
+        }
+
+        .Drinks_grupe{
+            display: none;
+            @include resetDiv;
+             .drinks{
+                @include foodReset;
+                @include mainFood;
+             }
+        }
+
         // this is one
     }
 
+    
 
 
 
 
     .main_section_two{
         width: 25%;
-        background: blanchedalmond;
-        margin-top: 30px;
+        background: rgba(87, 87, 86, 0.084);
+        margin-top: 60px;
     }
 }

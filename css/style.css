@@ -12,6 +12,7 @@ header {
 header .restaurant_header {
   width: 75%;
   display: flex;
+  margin-top: 9px;
   justify-content: space-between;
 }
 header .restaurant_header .header_icon_text {
@@ -28,7 +29,7 @@ header .restaurant_header .header_icon_text i {
 header .restaurant_header .header_icon_text p {
   font-size: 25px;
   padding-left: 20px;
-  font-weight: 500;
+  font-weight: 800;
 }
 header .restaurant_header .header_search {
   width: 55%;
@@ -70,19 +71,20 @@ header .restaurant_header .header_search input:focus {
 header .restaurant_header_two {
   width: 25%;
   display: flex;
+  margin-top: 7px;
   padding-left: 16%;
   gap: 35px;
   padding-top: 24px;
 }
 header .restaurant_header_two .profile_pic i {
   cursor: pointer;
-  font-size: 29px;
+  font-size: 30px;
 }
 header .restaurant_header_two .right_user_icon button {
   cursor: pointer;
   width: 100%;
   padding: 15px;
-  margin-top: -7px;
+  margin-top: -9px;
   border-radius: 15px;
   background-color: #FA801B;
   border: none;
@@ -94,31 +96,31 @@ section {
 section .main_section_one {
   width: 75%;
   background: #F5F8F3;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 section .main_section_one .resto_info {
   display: flex;
   width: 92%;
   margin-left: 3%;
   background: rgba(244, 149, 17, 0.5333333333);
-  border-radius: 20px;
+  border-radius: 15px;
 }
 section .main_section_one .resto_info .resto_image {
   width: 25%;
-  padding-left: 30px;
+  padding-left: 5px;
   border-radius: 20px;
 }
 section .main_section_one .resto_info .resto_image img {
   width: 100%;
-  height: 95%;
-  margin-top: 13px;
-  border-radius: 30px;
+  height: 96%;
+  margin-top: 6px;
+  border-radius: 15px;
 }
 section .main_section_one .resto_info .resto_info_detail {
   display: flex;
   width: 50%;
-  margin-left: 10px;
-  padding-top: 155px;
+  margin-left: 8px;
+  padding-top: 110px;
 }
 section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph {
   margin: 5px auto;
@@ -142,14 +144,19 @@ section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph .
   height: 100%;
 }
 section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph p {
-  color: #9EA1A1;
+  color: #F5F8F3;
   font-weight: 500;
   font-size: 18px;
 }
 section .main_section_one .resto_info .resto_info_more {
   display: flex;
   gap: 15px;
-  margin: 26% 0 0 120px;
+  margin: 20% 0 0 90px;
+  transition: 0.5s;
+}
+section .main_section_one .resto_info .resto_info_more:hover .resto_info_icon i {
+  transform: translateX(15px);
+  color: white;
 }
 section .main_section_one .resto_info .resto_info_more .resto_info_link button {
   border: none;
@@ -184,10 +191,10 @@ section .main_section_one .special_offer .special_item span {
   margin-top: 10px;
 }
 section .main_section_one .special_offer .special_item .special_hamburger {
-  width: 8%;
+  width: 8.5%;
   height: 85%;
-  margin-top: 9px;
-  margin-left: 10px;
+  margin-top: 9.6px;
+  margin-left: 8px;
 }
 section .main_section_one .special_offer .special_item .special_hamburger img {
   width: 100%;
@@ -232,10 +239,14 @@ section .main_section_one .menu_section {
 section .main_section_one .menu_section .sub_menu_section {
   width: 8%;
   height: 22vh;
-  background: #FFFFFF;
-  border-radius: 80px;
+  background: red;
+  border-radius: 25px;
   margin-top: 10px;
   cursor: pointer;
+}
+section .main_section_one .menu_section .sub_menu_section:hover {
+  background: rgb(16, 157, 11);
+  transform: translateY(-20px);
 }
 section .main_section_one .menu_section .sub_menu_section .menu_section_image {
   width: 75%;
@@ -276,9 +287,15 @@ section .main_section_one .menu_section .sub_menu_section .fish_menu_section_tex
   font-size: 18px;
 }
 section .main_section_one .menu_section .sub_menu_section .Shrimp_menu_section_text {
-  margin: 35px 0 0 17px;
+  margin: 35px 0 0 23px;
 }
 section .main_section_one .menu_section .sub_menu_section .Shrimp_menu_section_text span {
+  font-size: 18px;
+}
+section .main_section_one .menu_section .sub_menu_section .drinks_menu_section_text {
+  margin: 35px 0 0 18px;
+}
+section .main_section_one .menu_section .sub_menu_section .drinks_menu_section_text span {
   font-size: 18px;
 }
 section .main_section_one .menu_section button {
@@ -292,30 +309,37 @@ section .main_section_one .menu_section button {
 section .main_section_one .menu_section button:hover {
   background: #FA801B;
 }
-section .main_section_one .main_food {
-  display: flex;
-  gap: 39px;
+section .main_section_one .global_food {
   width: 92%;
   margin-left: 3%;
+}
+section .main_section_one .global_food .main_food {
+  display: flex;
+  gap: 39px;
   margin-top: 80px;
   margin-bottom: 110px;
 }
-section .main_section_one .main_food .available_food {
+section .main_section_one .global_food .main_food .available_food {
   width: 30.6%;
   height: 25vh;
   border-radius: 20px;
+  transition: 0.5s;
 }
-section .main_section_one .main_food .available_food .available_food_image {
+section .main_section_one .global_food .main_food .available_food:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+section .main_section_one .global_food .main_food .available_food .available_food_image {
   width: 100%;
   height: 100%;
   position: relative;
 }
-section .main_section_one .main_food .available_food .available_food_image img {
+section .main_section_one .global_food .main_food .available_food .available_food_image img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
 }
-section .main_section_one .main_food .available_food .available_food_image p {
+section .main_section_one .global_food .main_food .available_food .available_food_image p {
   width: 24%;
   height: 18%;
   background: #DBDED9;
@@ -327,22 +351,477 @@ section .main_section_one .main_food .available_food .available_food_image p {
   border-bottom-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-section .main_section_one .main_food .available_food .available_food_description {
+section .main_section_one .global_food .main_food .available_food .available_food_description {
   margin-top: 12px;
 }
-section .main_section_one .main_food .available_food .available_food_description .available_food_description_sub1 h1 {
+section .main_section_one .global_food .main_food .available_food .available_food_description .available_food_description_sub1 h1 {
   font-size: 19px;
 }
-section .main_section_one .main_food .available_food .available_food_description .available_food_description_sub2 {
+section .main_section_one .global_food .main_food .available_food .available_food_description .available_food_description_sub2 {
   display: flex;
   margin-top: 10px;
   gap: 10px;
 }
-section .main_section_one .main_food .available_food .available_food_description .available_food_description_sub2 span {
+section .main_section_one .global_food .main_food .available_food .available_food_description .available_food_description_sub2 span {
+  color: #9EA1A1;
+}
+section .main_section_one .pizza_food {
+  display: none;
+  width: 92%;
+  margin-left: 3%;
+}
+section .main_section_one .pizza_food .pizaa {
+  display: flex;
+  gap: 39px;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+section .main_section_one .pizza_food .pizaa .available_food {
+  width: 30.6%;
+  height: 25vh;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+section .main_section_one .pizza_food .pizaa .available_food:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+section .main_section_one .pizza_food .pizaa .available_food .available_food_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .main_section_one .pizza_food .pizaa .available_food .available_food_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+section .main_section_one .pizza_food .pizaa .available_food .available_food_image p {
+  width: 24%;
+  height: 18%;
+  background: #DBDED9;
+  margin-top: -34px;
+  margin-left: 0px;
+  position: absolute;
+  text-align: center;
+  padding-top: 8px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section .main_section_one .pizza_food .pizaa .available_food .available_food_description {
+  margin-top: 12px;
+}
+section .main_section_one .pizza_food .pizaa .available_food .available_food_description .available_food_description_sub1 h1 {
+  font-size: 19px;
+}
+section .main_section_one .pizza_food .pizaa .available_food .available_food_description .available_food_description_sub2 {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+section .main_section_one .pizza_food .pizaa .available_food .available_food_description .available_food_description_sub2 span {
+  color: #9EA1A1;
+}
+section .main_section_one .asian_food {
+  width: 92%;
+  margin-left: 3%;
+}
+section .main_section_one .asian_food .Asian {
+  display: flex;
+  gap: 39px;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+section .main_section_one .asian_food .Asian .available_food {
+  width: 30.6%;
+  height: 25vh;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+section .main_section_one .asian_food .Asian .available_food:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+section .main_section_one .asian_food .Asian .available_food .available_food_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .main_section_one .asian_food .Asian .available_food .available_food_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+section .main_section_one .asian_food .Asian .available_food .available_food_image p {
+  width: 24%;
+  height: 18%;
+  background: #DBDED9;
+  margin-top: -34px;
+  margin-left: 0px;
+  position: absolute;
+  text-align: center;
+  padding-top: 8px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section .main_section_one .asian_food .Asian .available_food .available_food_description {
+  margin-top: 12px;
+}
+section .main_section_one .asian_food .Asian .available_food .available_food_description .available_food_description_sub1 h1 {
+  font-size: 19px;
+}
+section .main_section_one .asian_food .Asian .available_food .available_food_description .available_food_description_sub2 {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+section .main_section_one .asian_food .Asian .available_food .available_food_description .available_food_description_sub2 span {
+  color: #9EA1A1;
+}
+section .main_section_one .burger_food {
+  width: 92%;
+  margin-left: 3%;
+  display: none;
+}
+section .main_section_one .burger_food .burger {
+  display: flex;
+  gap: 39px;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+section .main_section_one .burger_food .burger .available_food {
+  width: 30.6%;
+  height: 25vh;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+section .main_section_one .burger_food .burger .available_food:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+section .main_section_one .burger_food .burger .available_food .available_food_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .main_section_one .burger_food .burger .available_food .available_food_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+section .main_section_one .burger_food .burger .available_food .available_food_image p {
+  width: 24%;
+  height: 18%;
+  background: #DBDED9;
+  margin-top: -34px;
+  margin-left: 0px;
+  position: absolute;
+  text-align: center;
+  padding-top: 8px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section .main_section_one .burger_food .burger .available_food .available_food_description {
+  margin-top: 12px;
+}
+section .main_section_one .burger_food .burger .available_food .available_food_description .available_food_description_sub1 h1 {
+  font-size: 19px;
+}
+section .main_section_one .burger_food .burger .available_food .available_food_description .available_food_description_sub2 {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+section .main_section_one .burger_food .burger .available_food .available_food_description .available_food_description_sub2 span {
+  color: #9EA1A1;
+}
+section .main_section_one .Barbecue_food {
+  display: none;
+  width: 92%;
+  margin-left: 3%;
+}
+section .main_section_one .Barbecue_food .Barbecue {
+  display: flex;
+  gap: 39px;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+section .main_section_one .Barbecue_food .Barbecue .available_food {
+  width: 30.6%;
+  height: 25vh;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+section .main_section_one .Barbecue_food .Barbecue .available_food:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+section .main_section_one .Barbecue_food .Barbecue .available_food .available_food_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .main_section_one .Barbecue_food .Barbecue .available_food .available_food_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+section .main_section_one .Barbecue_food .Barbecue .available_food .available_food_image p {
+  width: 24%;
+  height: 18%;
+  background: #DBDED9;
+  margin-top: -34px;
+  margin-left: 0px;
+  position: absolute;
+  text-align: center;
+  padding-top: 8px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section .main_section_one .Barbecue_food .Barbecue .available_food .available_food_description {
+  margin-top: 12px;
+}
+section .main_section_one .Barbecue_food .Barbecue .available_food .available_food_description .available_food_description_sub1 h1 {
+  font-size: 19px;
+}
+section .main_section_one .Barbecue_food .Barbecue .available_food .available_food_description .available_food_description_sub2 {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+section .main_section_one .Barbecue_food .Barbecue .available_food .available_food_description .available_food_description_sub2 span {
+  color: #9EA1A1;
+}
+section .main_section_one .dessert_food {
+  display: none;
+  width: 92%;
+  margin-left: 3%;
+}
+section .main_section_one .dessert_food .dessert {
+  display: flex;
+  gap: 39px;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+section .main_section_one .dessert_food .dessert .available_food {
+  width: 30.6%;
+  height: 25vh;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+section .main_section_one .dessert_food .dessert .available_food:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+section .main_section_one .dessert_food .dessert .available_food .available_food_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .main_section_one .dessert_food .dessert .available_food .available_food_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+section .main_section_one .dessert_food .dessert .available_food .available_food_image p {
+  width: 24%;
+  height: 18%;
+  background: #DBDED9;
+  margin-top: -34px;
+  margin-left: 0px;
+  position: absolute;
+  text-align: center;
+  padding-top: 8px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section .main_section_one .dessert_food .dessert .available_food .available_food_description {
+  margin-top: 12px;
+}
+section .main_section_one .dessert_food .dessert .available_food .available_food_description .available_food_description_sub1 h1 {
+  font-size: 19px;
+}
+section .main_section_one .dessert_food .dessert .available_food .available_food_description .available_food_description_sub2 {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+section .main_section_one .dessert_food .dessert .available_food .available_food_description .available_food_description_sub2 span {
+  color: #9EA1A1;
+}
+section .main_section_one .sea_food {
+  display: none;
+  width: 92%;
+  margin-left: 3%;
+}
+section .main_section_one .sea_food .seafood {
+  display: flex;
+  gap: 39px;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+section .main_section_one .sea_food .seafood .available_food {
+  width: 30.6%;
+  height: 25vh;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+section .main_section_one .sea_food .seafood .available_food:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+section .main_section_one .sea_food .seafood .available_food .available_food_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .main_section_one .sea_food .seafood .available_food .available_food_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+section .main_section_one .sea_food .seafood .available_food .available_food_image p {
+  width: 24%;
+  height: 18%;
+  background: #DBDED9;
+  margin-top: -34px;
+  margin-left: 0px;
+  position: absolute;
+  text-align: center;
+  padding-top: 8px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section .main_section_one .sea_food .seafood .available_food .available_food_description {
+  margin-top: 12px;
+}
+section .main_section_one .sea_food .seafood .available_food .available_food_description .available_food_description_sub1 h1 {
+  font-size: 19px;
+}
+section .main_section_one .sea_food .seafood .available_food .available_food_description .available_food_description_sub2 {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+section .main_section_one .sea_food .seafood .available_food .available_food_description .available_food_description_sub2 span {
+  color: #9EA1A1;
+}
+section .main_section_one .salad_food {
+  width: 92%;
+  margin-left: 3%;
+  display: none;
+}
+section .main_section_one .salad_food .salad {
+  display: flex;
+  gap: 39px;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+section .main_section_one .salad_food .salad .available_food {
+  width: 30.6%;
+  height: 25vh;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+section .main_section_one .salad_food .salad .available_food:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+section .main_section_one .salad_food .salad .available_food .available_food_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .main_section_one .salad_food .salad .available_food .available_food_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+section .main_section_one .salad_food .salad .available_food .available_food_image p {
+  width: 24%;
+  height: 18%;
+  background: #DBDED9;
+  margin-top: -34px;
+  margin-left: 0px;
+  position: absolute;
+  text-align: center;
+  padding-top: 8px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section .main_section_one .salad_food .salad .available_food .available_food_description {
+  margin-top: 12px;
+}
+section .main_section_one .salad_food .salad .available_food .available_food_description .available_food_description_sub1 h1 {
+  font-size: 19px;
+}
+section .main_section_one .salad_food .salad .available_food .available_food_description .available_food_description_sub2 {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+section .main_section_one .salad_food .salad .available_food .available_food_description .available_food_description_sub2 span {
+  color: #9EA1A1;
+}
+section .main_section_one .Drinks_grupe {
+  display: none;
+  width: 92%;
+  margin-left: 3%;
+}
+section .main_section_one .Drinks_grupe .drinks {
+  display: flex;
+  gap: 39px;
+  margin-top: 40px;
+  margin-bottom: 110px;
+}
+section .main_section_one .Drinks_grupe .drinks .available_food {
+  width: 30.6%;
+  height: 25vh;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+section .main_section_one .Drinks_grupe .drinks .available_food:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+section .main_section_one .Drinks_grupe .drinks .available_food .available_food_image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+section .main_section_one .Drinks_grupe .drinks .available_food .available_food_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+section .main_section_one .Drinks_grupe .drinks .available_food .available_food_image p {
+  width: 24%;
+  height: 18%;
+  background: #DBDED9;
+  margin-top: -34px;
+  margin-left: 0px;
+  position: absolute;
+  text-align: center;
+  padding-top: 8px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+section .main_section_one .Drinks_grupe .drinks .available_food .available_food_description {
+  margin-top: 12px;
+}
+section .main_section_one .Drinks_grupe .drinks .available_food .available_food_description .available_food_description_sub1 h1 {
+  font-size: 19px;
+}
+section .main_section_one .Drinks_grupe .drinks .available_food .available_food_description .available_food_description_sub2 {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+section .main_section_one .Drinks_grupe .drinks .available_food .available_food_description .available_food_description_sub2 span {
   color: #9EA1A1;
 }
 section .main_section_two {
   width: 25%;
-  background: blanchedalmond;
-  margin-top: 30px;
+  background: rgba(87, 87, 86, 0.084);
+  margin-top: 60px;
 }/*# sourceMappingURL=style.css.map */

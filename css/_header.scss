@@ -7,6 +7,7 @@ header{
     .restaurant_header{
         width: 75%;
         display: flex;
+        margin-top: 9px;
         justify-content: space-between; 
         // background: red;
         .header_icon_text{
@@ -23,7 +24,7 @@ header{
             p{
                 font-size: 25px;
                 padding-left: 20px;
-                font-weight: 500;
+                font-weight: 800;
             }
             
         }
@@ -65,13 +66,14 @@ header{
         // background: blue;
         width: 25%;
         display: flex;
+        margin-top: 7px;
         padding-left: 16%;
         gap: 35px;
         padding-top: 24px;
         .profile_pic{
             i{
                 @include button;
-                font-size: 29px;
+                font-size: 30px;
             }
         }
         .right_user_icon{
@@ -79,7 +81,7 @@ header{
                 @include button;
                 width: 100%;
                 padding: 15px;
-                margin-top:  -7px;
+                margin-top:  -9px;
                 border-radius: 15px;
                 background-color:$buttonColorTwo;
                 border: none;
