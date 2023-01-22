@@ -822,6 +822,239 @@ section .main_section_one .Drinks_grupe .drinks .available_food .available_food_
 }
 section .main_section_two {
   width: 25%;
-  background: rgba(87, 87, 86, 0.084);
+  background: rgba(173, 173, 172, 0.144);
   margin-top: 60px;
+}
+section .main_section_two h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #DE590B;
+  margin-top: 2px;
+}
+section .main_section_two .main_image {
+  width: 64%;
+  height: 30vh;
+  margin: 20px 0 0 72px;
+}
+section .main_section_two .main_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+section .main_section_two .main_btn {
+  margin: 12.4em 0 0 50px;
+  border-radius: 10px;
+}
+section .main_section_two .main_btn button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  color: #FFFFFF;
+  background: #FA801B;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+section .main_section_two .main_btn button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 127, 210, 0.762);
+  border-radius: 10px;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: right;
+}
+section .main_section_two .main_btn button:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+  border-radius: 10px;
+}
+section .main_section_two .main_btn button span {
+  display: inline-block;
+  z-index: 2;
+}
+
+.main {
+  height: 100vh;
+  background: rgba(50, 40, 40, 0.403);
+  background-image: url(/pics/4.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
+.main .ditele_info {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  height: 85vh;
+  margin-top: 3.5em;
+}
+.main .ditele_info .description {
+  width: 50%;
+  background-image: url(/pics/11.jpg);
+  background-color: rgb(208, 250, 21);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.main .ditele_info .description h1 {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 35px;
+  border-radius: 20px;
+  padding: 20px;
+  border: 5px solid #FFFFFF;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+}
+.main .ditele_info .description .sub_description {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 100px;
+}
+.main .ditele_info .description .sub_description .quality {
+  width: 50%;
+  height: 15em;
+  background-color: transparent;
+  box-shadow: 0 0 20px rgb(9, 9, 9);
+  text-align: center;
+  border-radius: 10px;
+}
+.main .ditele_info .description .sub_description .quality p {
+  margin-top: 130px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.main .ditele_info .description .sub_description .fast {
+  width: 50%;
+  height: 15em;
+  background-color: transparent;
+  box-shadow: 0 0 20px rgb(9, 9, 9);
+  text-align: center;
+  border-radius: 10px;
+}
+.main .ditele_info .description .sub_description .fast p {
+  text-align: center;
+  margin-top: 130px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+.main .ditele_info .description span {
+  position: absolute;
+  font-size: 23px;
+  margin: 5em 0 0 3em;
+  letter-spacing: 2px;
+}
+.main .ditele_info .description span a {
+  color: #FFFFFF;
+}
+.main .ditele_info form {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 50%;
+}
+.main .ditele_info form h1 {
+  font-size: 40px;
+  color: rgba(244, 149, 17, 0.5333333333);
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.main .ditele_info form .icon {
+  position: absolute;
+  width: 23px;
+  margin: 48px 0 0 100px;
+  padding-left: 7px;
+  align-items: center;
+  font-size: 25px;
+  /* background: red; */
+}
+.main .ditele_info form input {
+  width: 70%;
+  height: 10%;
+  margin: 5% 0 0 1%;
+  padding-left: 50px;
+  border-radius: 10px;
+  background: rgba(18, 127, 210, 0.399);
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.main .ditele_info form input:focus {
+  border: 1px red;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+.main .ditele_info form input::-moz-placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 3px;
+  text-transform: uppercase;
+  border: none;
+  color: #FFFFFF;
+}
+.main .ditele_info form input:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 3px;
+  text-transform: uppercase;
+  border: none;
+  color: #FFFFFF;
+}
+.main .ditele_info form input::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 3px;
+  text-transform: uppercase;
+  border: none;
+  color: #FFFFFF;
+}
+.main .ditele_info form button {
+  width: 60%;
+  height: 10%;
+  margin: 7% 0 0 2.8%;
+  border-radius: 10px;
+  font-size: 25px;
+  background: rgba(203, 119, 10, 0.43);
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.main .ditele_info form p {
+  font-size: 20px;
+  margin: 40px 0 0 30px;
+  letter-spacing: 1px;
+  gap: 10px;
+}
+.main .ditele_info form p a {
+  color: rgba(244, 149, 17, 0.5333333333);
 }/*# sourceMappingURL=style.css.map */

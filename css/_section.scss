@@ -398,7 +398,69 @@ section{
 
     .main_section_two{
         width: 25%;
-        background: rgba(87, 87, 86, 0.084);
+        background: rgba(173, 173, 172, 0.144);
         margin-top: 60px;
+        h1{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: capitalize;
+            color: $h1Color;
+            margin-top: 2px;
+        }
+        .main_image{
+            width: 64%;
+            height: 30vh;
+            margin: 20px 0 0 72px;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+        .main_btn{
+            margin: 12.4em 0 0 50px;
+            border-radius: 10px;
+            // background: red;
+            button{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                font-size: 25px;
+                padding: 20px;
+                border-radius: 10px;
+                text-transform: capitalize;
+                border: none;
+                outline: none;
+                color: $mainColorTwo;
+                background: $buttonColorTwo;
+                letter-spacing: 0.1em;
+                @include button;
+                
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(18, 127, 210, 0.762);
+                    border-radius: 10px;
+                    transform: scaleX(0);
+                    transition: transform 0.5s ease-in-out;
+                    transform-origin: right;
+                }
+                &:hover::before{
+                    transform: scaleX(1);
+                    transform-origin: left;
+                    border-radius: 10px;
+                }
+                span{
+                    display: inline-block;
+                    z-index: 2;
+                }
+            }
+        }
     }
 }
