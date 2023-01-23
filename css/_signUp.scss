@@ -49,8 +49,14 @@
                     box-shadow: 0 0 20px  rgb(9, 9, 9);
                     text-align: center;
                     border-radius: 10px;
+                    i{
+                        margin-top: 10px;
+                        font-size: 90px;
+                        color: $mainColorTwo
+                    }
                     p{
-                        margin-top: 130px;
+                        position: absolute;
+                        margin: 50px 0 0 58px;
                         font-size: 30px;
                         font-weight: 800;
                         line-height: 45px;
@@ -59,15 +65,22 @@
                     }
                 }
                 .fast{
+                    position: relative;
                     width: 50%;
                     height: 15em;
                     background-color: transparent;
                     box-shadow: 0 0 20px  rgb(9, 9, 9);
                     text-align: center;
                     border-radius: 10px;
+                    i{
+                        margin-top: 10px;
+                        font-size: 90px;
+                        color: $buttonColorTwo;
+                    }
                     p{
+                        position: absolute;
+                        margin: 50px 0 0 60px;
                         text-align: center;
-                        margin-top: 130px;
                         font-size: 30px;
                         font-weight: 800;
                         line-height: 45px;
@@ -128,7 +141,7 @@
                 font-size: 20px;
                 color: $mainColorTwo;
                 &:focus{
-                    border: 1px red;
+                    outline: none;
                     color: $mainColorTwo;
                     font-size: 20px;
                     font-weight: 600;

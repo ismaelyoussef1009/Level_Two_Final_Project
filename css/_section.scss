@@ -129,7 +129,7 @@ section{
                 width: 20%;
                 background: $buttonColorTwo;
                 margin-left: 385px;
-                padding-top: 16px;
+                padding-top: 18px;
                 gap: 15px;
                 border-radius: 30px;
                 .delivery_icon_one{
@@ -409,9 +409,9 @@ section{
             margin-top: 2px;
         }
         .main_image{
-            width: 64%;
-            height: 30vh;
-            margin: 20px 0 0 72px;
+            width: 90%;
+            height: 35vh;
+            margin: 20px 0 0 20px;
             img{
                 width: 100%;
                 height: 100%;
@@ -419,7 +419,7 @@ section{
             }
         }
         .main_btn{
-            margin: 12.4em 0 0 50px;
+            margin: 9.8em 0 0 50px;
             border-radius: 10px;
             // background: red;
             button{
@@ -461,6 +461,93 @@ section{
                     z-index: 2;
                 }
             }
+            P{
+                margin: 15PX 0 0 55PX;
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-weight: 600;                
+                a{
+                    text-decoration: none;
+                    color: $buttonColorOne;
+                }
+            }
+            
+        }
+        form{
+            width: 95%;
+            height: 60vh;
+            background: $mainColorOne;
+            text-align: center;
+            border-radius: 12px;
+            // display: none;
+            // justify-content: center;
+            padding-top: 40px;
+            margin: 100px 0 0 11px;
+            h1{
+                color: $mainColorTwo;
+            }
+            .icon{
+                position: absolute;
+                width: 23px;
+                margin: 62.8px 0 0 20px;
+                padding-left: 7px;
+                align-items: center;
+                font-size: 25px;
+                /* background: red; */
+                i{
+                    color: white;
+                }
+            }
+            input{
+                width: 90%;
+                height: 15%;
+                margin: 12% 0 0 1%;
+                padding-left: 50px;
+                border-radius: 10px;
+                background: rgba(247, 149, 12, 0.411);
+                // background: rgba(251, 171, 22, 0.43);
+                border: none;
+                font-size: 20px;
+                color: $mainColorTwo;
+                &:focus{
+                    // border: 1px red;
+                    outline: none;
+                    color: $mainColorTwo;
+                    font-size: 20px;
+                    font-weight: 600;
+                    
+                }
+                &::placeholder{
+                    font-size: 15px;
+                    font-weight: 600;
+                    padding-top: 3px;
+                    text-transform: uppercase;
+                    // border: none;
+                    color: $mainColorTwo;
+                }
+            }
+            button{
+                width: 70%;
+                height: 14%;
+                margin: 19% 0 0 17%;
+                border-radius: 10px;
+                font-size: 25px;
+                background: $mainColorTree;
+                border: none;
+                @include button;
+                font-weight: 700;
+                color: $mainColorTwo; 
+            }
+            
+        }
+        .place_command{
+            background: red;
+            margin-top: 120px;
+            margin-left: 9px;
+            width: 96%;
+            height: 80vh;
+            border-radius: 8px;
+            text-align: center;
         }
     }
 }

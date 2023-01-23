@@ -205,7 +205,7 @@ section .main_section_one .special_offer .special_delivery {
   width: 20%;
   background: #FA801B;
   margin-left: 385px;
-  padding-top: 16px;
+  padding-top: 18px;
   gap: 15px;
   border-radius: 30px;
 }
@@ -834,9 +834,9 @@ section .main_section_two h1 {
   margin-top: 2px;
 }
 section .main_section_two .main_image {
-  width: 64%;
-  height: 30vh;
-  margin: 20px 0 0 72px;
+  width: 90%;
+  height: 35vh;
+  margin: 20px 0 0 20px;
 }
 section .main_section_two .main_image img {
   width: 100%;
@@ -844,7 +844,7 @@ section .main_section_two .main_image img {
   border-radius: 10px;
 }
 section .main_section_two .main_btn {
-  margin: 12.4em 0 0 50px;
+  margin: 9.8em 0 0 50px;
   border-radius: 10px;
 }
 section .main_section_two .main_btn button {
@@ -884,6 +884,99 @@ section .main_section_two .main_btn button:hover::before {
 section .main_section_two .main_btn button span {
   display: inline-block;
   z-index: 2;
+}
+section .main_section_two .main_btn P {
+  margin: 15PX 0 0 55PX;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+section .main_section_two .main_btn P a {
+  text-decoration: none;
+  color: #FA4125;
+}
+section .main_section_two form {
+  width: 95%;
+  height: 60vh;
+  background: rgba(244, 149, 17, 0.5333333333);
+  text-align: center;
+  border-radius: 12px;
+  padding-top: 40px;
+  margin: 100px 0 0 11px;
+}
+section .main_section_two form h1 {
+  color: #FFFFFF;
+}
+section .main_section_two form .icon {
+  position: absolute;
+  width: 23px;
+  margin: 62.8px 0 0 20px;
+  padding-left: 7px;
+  align-items: center;
+  font-size: 25px;
+  /* background: red; */
+}
+section .main_section_two form .icon i {
+  color: white;
+}
+section .main_section_two form input {
+  width: 90%;
+  height: 15%;
+  margin: 12% 0 0 1%;
+  padding-left: 50px;
+  border-radius: 10px;
+  background: rgba(247, 149, 12, 0.411);
+  border: none;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+section .main_section_two form input:focus {
+  outline: none;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+section .main_section_two form input::-moz-placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+section .main_section_two form input:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+section .main_section_two form input::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+section .main_section_two form button {
+  width: 70%;
+  height: 14%;
+  margin: 19% 0 0 17%;
+  border-radius: 10px;
+  font-size: 25px;
+  background: #8B27C7;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+section .main_section_two .place_command {
+  background: red;
+  margin-top: 120px;
+  margin-left: 9px;
+  width: 96%;
+  height: 80vh;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .main {
@@ -937,8 +1030,14 @@ section .main_section_two .main_btn button span {
   text-align: center;
   border-radius: 10px;
 }
+.main .ditele_info .description .sub_description .quality i {
+  margin-top: 10px;
+  font-size: 90px;
+  color: #FFFFFF;
+}
 .main .ditele_info .description .sub_description .quality p {
-  margin-top: 130px;
+  position: absolute;
+  margin: 50px 0 0 58px;
   font-size: 30px;
   font-weight: 800;
   line-height: 45px;
@@ -946,6 +1045,7 @@ section .main_section_two .main_btn button span {
   text-align: center;
 }
 .main .ditele_info .description .sub_description .fast {
+  position: relative;
   width: 50%;
   height: 15em;
   background-color: transparent;
@@ -953,9 +1053,15 @@ section .main_section_two .main_btn button span {
   text-align: center;
   border-radius: 10px;
 }
+.main .ditele_info .description .sub_description .fast i {
+  margin-top: 10px;
+  font-size: 90px;
+  color: #FA801B;
+}
 .main .ditele_info .description .sub_description .fast p {
+  position: absolute;
+  margin: 50px 0 0 60px;
   text-align: center;
-  margin-top: 130px;
   font-size: 30px;
   font-weight: 800;
   line-height: 45px;
@@ -1008,7 +1114,7 @@ section .main_section_two .main_btn button span {
   color: #FFFFFF;
 }
 .main .ditele_info form input:focus {
-  border: 1px red;
+  outline: none;
   color: #FFFFFF;
   font-size: 20px;
   font-weight: 600;
