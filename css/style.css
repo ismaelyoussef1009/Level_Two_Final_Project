@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
+  font-family: "Outfit", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -51,22 +53,22 @@ header .restaurant_header .header_search input {
   font-size: 15px;
   font-weight: bold;
   color: rgba(95, 93, 93, 0.847);
-  background: #9EA1A1;
+  background: #9ea1a1;
   transition: 0.5s;
   border: none;
   outline: none;
 }
 header .restaurant_header .header_search input::-moz-placeholder {
-  color: #F5F8F3;
+  color: #f5f8f3;
 }
 header .restaurant_header .header_search input:-ms-input-placeholder {
-  color: #F5F8F3;
+  color: #f5f8f3;
 }
 header .restaurant_header .header_search input::placeholder {
-  color: #F5F8F3;
+  color: #f5f8f3;
 }
 header .restaurant_header .header_search input:focus {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 header .restaurant_header_two {
   width: 25%;
@@ -86,7 +88,7 @@ header .restaurant_header_two .right_user_icon button {
   padding: 15px;
   margin-top: -9px;
   border-radius: 15px;
-  background-color: #FA801B;
+  background-color: #fa801b;
   border: none;
 }
 
@@ -95,7 +97,7 @@ section {
 }
 section .main_section_one {
   width: 75%;
-  background: #F5F8F3;
+  background: #f5f8f3;
   margin-top: 60px;
 }
 section .main_section_one .resto_info {
@@ -127,7 +129,7 @@ section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph {
   padding-left: 90px;
 }
 section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph h1 {
-  color: #DE590B;
+  color: #de590b;
   font-size: 35px;
   font-weight: 900;
 }
@@ -144,7 +146,7 @@ section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph .
   height: 100%;
 }
 section .main_section_one .resto_info .resto_info_detail .resto_info_paragraph p {
-  color: #F5F8F3;
+  color: #f5f8f3;
   font-weight: 500;
   font-size: 18px;
 }
@@ -166,14 +168,14 @@ section .main_section_one .resto_info .resto_info_more .resto_info_link button {
 }
 section .main_section_one .resto_info .resto_info_more .resto_info_link button a {
   text-decoration: none;
-  color: #FA801B;
+  color: #fa801b;
 }
 section .main_section_one .resto_info .resto_info_more .resto_info_icon {
   margin-top: 3px;
   cursor: pointer;
 }
 section .main_section_one .resto_info .resto_info_more .resto_info_icon i {
-  color: #FA801B;
+  color: #fa801b;
 }
 section .main_section_one .special_offer {
   display: flex;
@@ -203,7 +205,7 @@ section .main_section_one .special_offer .special_item .special_hamburger img {
 section .main_section_one .special_offer .special_delivery {
   display: flex;
   width: 20%;
-  background: #FA801B;
+  background: #fa801b;
   margin-left: 385px;
   padding-top: 18px;
   gap: 15px;
@@ -215,19 +217,19 @@ section .main_section_one .special_offer .special_delivery .delivery_icon_one {
   cursor: pointer;
 }
 section .main_section_one .special_offer .special_delivery .delivery_icon_one i {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section .main_section_one .special_offer .special_delivery .delivery_text span {
   font-size: 17px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section .main_section_one .special_offer .special_delivery .delivery_icon_two {
   font-size: 16px;
   cursor: pointer;
 }
 section .main_section_one .special_offer .special_delivery .delivery_icon_two i {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section .main_section_one .menu_section {
   width: 92%;
@@ -262,38 +264,44 @@ section .main_section_one .menu_section .sub_menu_section .menu_section_image i 
   margin: 10px 0 0 16px;
   font-size: 30px;
 }
+section .main_section_one .menu_section .sub_menu_section .menu_section_text_all {
+  margin: 35px 0 0 25px;
+}
+section .main_section_one .menu_section .sub_menu_section .menu_section_text_all span {
+  font-size: 18px;
+}
 section .main_section_one .menu_section .sub_menu_section .menu_section_text {
-  margin: 35px 0 0 21px;
+  margin: 35px 0 0 19px;
 }
 section .main_section_one .menu_section .sub_menu_section .menu_section_text span {
   font-size: 18px;
 }
 section .main_section_one .menu_section .sub_menu_section .man_menu_section_text {
-  margin: 35px 0 0 16px;
+  margin: 35px 0 0 10px;
 }
 section .main_section_one .menu_section .sub_menu_section .man_menu_section_text span {
   font-size: 18px;
 }
 section .main_section_one .menu_section .sub_menu_section .Barbecue_menu_section_text {
-  margin: 35px 0 0 10px;
+  margin: 35px 0 0 5px;
 }
 section .main_section_one .menu_section .sub_menu_section .Barbecue_menu_section_text span {
-  font-size: 18px;
+  font-size: 17px;
 }
 section .main_section_one .menu_section .sub_menu_section .fish_menu_section_text {
-  margin: 35px 0 0 14px;
+  margin: 35px 0 0 8px;
 }
 section .main_section_one .menu_section .sub_menu_section .fish_menu_section_text span {
   font-size: 18px;
 }
 section .main_section_one .menu_section .sub_menu_section .Shrimp_menu_section_text {
-  margin: 35px 0 0 23px;
+  margin: 35px 0 0 19px;
 }
 section .main_section_one .menu_section .sub_menu_section .Shrimp_menu_section_text span {
   font-size: 18px;
 }
 section .main_section_one .menu_section .sub_menu_section .drinks_menu_section_text {
-  margin: 35px 0 0 18px;
+  margin: 35px 0 0 15px;
 }
 section .main_section_one .menu_section .sub_menu_section .drinks_menu_section_text span {
   font-size: 18px;
@@ -307,7 +315,7 @@ section .main_section_one .menu_section button {
   border: none;
 }
 section .main_section_one .menu_section button:hover {
-  background: #FA801B;
+  background: #fa801b;
 }
 section .main_section_one .global_food {
   width: 92%;
@@ -342,7 +350,7 @@ section .main_section_one .global_food .main_food .available_food .available_foo
 section .main_section_one .global_food .main_food .available_food .available_food_image p {
   width: 24%;
   height: 18%;
-  background: #DBDED9;
+  background: #dbded9;
   margin-top: -34px;
   margin-left: 0px;
   position: absolute;
@@ -363,7 +371,7 @@ section .main_section_one .global_food .main_food .available_food .available_foo
   gap: 10px;
 }
 section .main_section_one .global_food .main_food .available_food .available_food_description .available_food_description_sub2 span {
-  color: #9EA1A1;
+  color: #9ea1a1;
 }
 section .main_section_one .pizza_food {
   display: none;
@@ -399,7 +407,7 @@ section .main_section_one .pizza_food .pizaa .available_food .available_food_ima
 section .main_section_one .pizza_food .pizaa .available_food .available_food_image p {
   width: 24%;
   height: 18%;
-  background: #DBDED9;
+  background: #dbded9;
   margin-top: -34px;
   margin-left: 0px;
   position: absolute;
@@ -420,7 +428,7 @@ section .main_section_one .pizza_food .pizaa .available_food .available_food_des
   gap: 10px;
 }
 section .main_section_one .pizza_food .pizaa .available_food .available_food_description .available_food_description_sub2 span {
-  color: #9EA1A1;
+  color: #9ea1a1;
 }
 section .main_section_one .asian_food {
   width: 92%;
@@ -455,7 +463,7 @@ section .main_section_one .asian_food .Asian .available_food .available_food_ima
 section .main_section_one .asian_food .Asian .available_food .available_food_image p {
   width: 24%;
   height: 18%;
-  background: #DBDED9;
+  background: #dbded9;
   margin-top: -34px;
   margin-left: 0px;
   position: absolute;
@@ -476,7 +484,7 @@ section .main_section_one .asian_food .Asian .available_food .available_food_des
   gap: 10px;
 }
 section .main_section_one .asian_food .Asian .available_food .available_food_description .available_food_description_sub2 span {
-  color: #9EA1A1;
+  color: #9ea1a1;
 }
 section .main_section_one .burger_food {
   width: 92%;
@@ -512,7 +520,7 @@ section .main_section_one .burger_food .burger .available_food .available_food_i
 section .main_section_one .burger_food .burger .available_food .available_food_image p {
   width: 24%;
   height: 18%;
-  background: #DBDED9;
+  background: #dbded9;
   margin-top: -34px;
   margin-left: 0px;
   position: absolute;
@@ -533,7 +541,7 @@ section .main_section_one .burger_food .burger .available_food .available_food_d
   gap: 10px;
 }
 section .main_section_one .burger_food .burger .available_food .available_food_description .available_food_description_sub2 span {
-  color: #9EA1A1;
+  color: #9ea1a1;
 }
 section .main_section_one .Barbecue_food {
   display: none;
@@ -569,7 +577,7 @@ section .main_section_one .Barbecue_food .Barbecue .available_food .available_fo
 section .main_section_one .Barbecue_food .Barbecue .available_food .available_food_image p {
   width: 24%;
   height: 18%;
-  background: #DBDED9;
+  background: #dbded9;
   margin-top: -34px;
   margin-left: 0px;
   position: absolute;
@@ -590,7 +598,7 @@ section .main_section_one .Barbecue_food .Barbecue .available_food .available_fo
   gap: 10px;
 }
 section .main_section_one .Barbecue_food .Barbecue .available_food .available_food_description .available_food_description_sub2 span {
-  color: #9EA1A1;
+  color: #9ea1a1;
 }
 section .main_section_one .dessert_food {
   display: none;
@@ -626,7 +634,7 @@ section .main_section_one .dessert_food .dessert .available_food .available_food
 section .main_section_one .dessert_food .dessert .available_food .available_food_image p {
   width: 24%;
   height: 18%;
-  background: #DBDED9;
+  background: #dbded9;
   margin-top: -34px;
   margin-left: 0px;
   position: absolute;
@@ -647,7 +655,7 @@ section .main_section_one .dessert_food .dessert .available_food .available_food
   gap: 10px;
 }
 section .main_section_one .dessert_food .dessert .available_food .available_food_description .available_food_description_sub2 span {
-  color: #9EA1A1;
+  color: #9ea1a1;
 }
 section .main_section_one .sea_food {
   display: none;
@@ -683,7 +691,7 @@ section .main_section_one .sea_food .seafood .available_food .available_food_ima
 section .main_section_one .sea_food .seafood .available_food .available_food_image p {
   width: 24%;
   height: 18%;
-  background: #DBDED9;
+  background: #dbded9;
   margin-top: -34px;
   margin-left: 0px;
   position: absolute;
@@ -704,7 +712,7 @@ section .main_section_one .sea_food .seafood .available_food .available_food_des
   gap: 10px;
 }
 section .main_section_one .sea_food .seafood .available_food .available_food_description .available_food_description_sub2 span {
-  color: #9EA1A1;
+  color: #9ea1a1;
 }
 section .main_section_one .salad_food {
   width: 92%;
@@ -740,7 +748,7 @@ section .main_section_one .salad_food .salad .available_food .available_food_ima
 section .main_section_one .salad_food .salad .available_food .available_food_image p {
   width: 24%;
   height: 18%;
-  background: #DBDED9;
+  background: #dbded9;
   margin-top: -34px;
   margin-left: 0px;
   position: absolute;
@@ -761,7 +769,7 @@ section .main_section_one .salad_food .salad .available_food .available_food_des
   gap: 10px;
 }
 section .main_section_one .salad_food .salad .available_food .available_food_description .available_food_description_sub2 span {
-  color: #9EA1A1;
+  color: #9ea1a1;
 }
 section .main_section_one .Drinks_grupe {
   display: none;
@@ -797,7 +805,7 @@ section .main_section_one .Drinks_grupe .drinks .available_food .available_food_
 section .main_section_one .Drinks_grupe .drinks .available_food .available_food_image p {
   width: 24%;
   height: 18%;
-  background: #DBDED9;
+  background: #dbded9;
   margin-top: -34px;
   margin-left: 0px;
   position: absolute;
@@ -818,7 +826,7 @@ section .main_section_one .Drinks_grupe .drinks .available_food .available_food_
   gap: 10px;
 }
 section .main_section_one .Drinks_grupe .drinks .available_food .available_food_description .available_food_description_sub2 span {
-  color: #9EA1A1;
+  color: #9ea1a1;
 }
 section .main_section_two {
   width: 25%;
@@ -830,7 +838,7 @@ section .main_section_two h1 {
   font-size: 30px;
   font-weight: 700;
   text-transform: capitalize;
-  color: #DE590B;
+  color: #de590b;
   margin-top: 2px;
 }
 section .main_section_two .main_image {
@@ -858,8 +866,8 @@ section .main_section_two .main_btn button {
   text-transform: capitalize;
   border: none;
   outline: none;
-  color: #FFFFFF;
-  background: #FA801B;
+  color: #ffffff;
+  background: #fa801b;
   letter-spacing: 0.1em;
   cursor: pointer;
 }
@@ -893,7 +901,7 @@ section .main_section_two .main_btn P {
 }
 section .main_section_two .main_btn P a {
   text-decoration: none;
-  color: #FA4125;
+  color: #fa4125;
 }
 section .main_section_two form {
   width: 95%;
@@ -905,7 +913,7 @@ section .main_section_two form {
   margin: 100px 0 0 11px;
 }
 section .main_section_two form h1 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section .main_section_two form .icon {
   position: absolute;
@@ -928,11 +936,11 @@ section .main_section_two form input {
   background: rgba(247, 149, 12, 0.411);
   border: none;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section .main_section_two form input:focus {
   outline: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 600;
 }
@@ -941,21 +949,21 @@ section .main_section_two form input::-moz-placeholder {
   font-weight: 600;
   padding-top: 3px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section .main_section_two form input:-ms-input-placeholder {
   font-size: 15px;
   font-weight: 600;
   padding-top: 3px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section .main_section_two form input::placeholder {
   font-size: 15px;
   font-weight: 600;
   padding-top: 3px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 section .main_section_two form button {
   width: 70%;
@@ -963,20 +971,31 @@ section .main_section_two form button {
   margin: 19% 0 0 17%;
   border-radius: 10px;
   font-size: 25px;
-  background: #8B27C7;
+  background: #fa801b;
   border: none;
   cursor: pointer;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+section .main_section_two form button:hover {
+  background: #de590b;
 }
 section .main_section_two .place_command {
-  background: red;
+  background: #9ea1a1;
   margin-top: 120px;
   margin-left: 9px;
   width: 96%;
-  height: 80vh;
+  height: 113vh;
   border-radius: 8px;
   text-align: center;
+}
+section .main_section_two .place_command .title {
+  width: 100%;
+  height: 40vh;
+}
+section .main_section_two .place_command .title img {
+  width: 100%;
+  height: 100%;
 }
 
 .main {
@@ -1010,8 +1029,8 @@ section .main_section_two .place_command {
   margin-top: 35px;
   border-radius: 20px;
   padding: 20px;
-  border: 5px solid #FFFFFF;
-  color: #FFFFFF;
+  border: 5px solid #ffffff;
+  color: #ffffff;
   text-align: center;
   font-size: 40px;
 }
@@ -1033,7 +1052,7 @@ section .main_section_two .place_command {
 .main .ditele_info .description .sub_description .quality i {
   margin-top: 10px;
   font-size: 90px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main .ditele_info .description .sub_description .quality p {
   position: absolute;
@@ -1041,7 +1060,7 @@ section .main_section_two .place_command {
   font-size: 30px;
   font-weight: 800;
   line-height: 45px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 .main .ditele_info .description .sub_description .fast {
@@ -1056,7 +1075,7 @@ section .main_section_two .place_command {
 .main .ditele_info .description .sub_description .fast i {
   margin-top: 10px;
   font-size: 90px;
-  color: #FA801B;
+  color: #fa801b;
 }
 .main .ditele_info .description .sub_description .fast p {
   position: absolute;
@@ -1065,7 +1084,7 @@ section .main_section_two .place_command {
   font-size: 30px;
   font-weight: 800;
   line-height: 45px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main .ditele_info .description span {
   position: absolute;
@@ -1074,7 +1093,7 @@ section .main_section_two .place_command {
   letter-spacing: 2px;
 }
 .main .ditele_info .description span a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main .ditele_info form {
   position: relative;
@@ -1089,7 +1108,7 @@ section .main_section_two .place_command {
 }
 .main .ditele_info form h1 {
   font-size: 40px;
-  color: rgba(244, 149, 17, 0.5333333333);
+  color: #fa801b;
   margin-top: 50px;
   margin-bottom: 60px;
 }
@@ -1100,22 +1119,24 @@ section .main_section_two .place_command {
   padding-left: 7px;
   align-items: center;
   font-size: 25px;
-  /* background: red; */
+}
+.main .ditele_info form .icon i {
+  color: #ffffff;
 }
 .main .ditele_info form input {
   width: 70%;
   height: 10%;
   margin: 5% 0 0 1%;
-  padding-left: 50px;
+  padding-left: 60px;
   border-radius: 10px;
-  background: rgba(18, 127, 210, 0.399);
+  background: #9ea1a1;
   border: none;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main .ditele_info form input:focus {
   outline: none;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 600;
 }
@@ -1125,7 +1146,7 @@ section .main_section_two .place_command {
   padding-top: 3px;
   text-transform: uppercase;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main .ditele_info form input:-ms-input-placeholder {
   font-size: 15px;
@@ -1133,7 +1154,7 @@ section .main_section_two .place_command {
   padding-top: 3px;
   text-transform: uppercase;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main .ditele_info form input::placeholder {
   font-size: 15px;
@@ -1141,7 +1162,7 @@ section .main_section_two .place_command {
   padding-top: 3px;
   text-transform: uppercase;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .main .ditele_info form button {
   width: 60%;
@@ -1149,11 +1170,14 @@ section .main_section_two .place_command {
   margin: 7% 0 0 2.8%;
   border-radius: 10px;
   font-size: 25px;
-  background: rgba(203, 119, 10, 0.43);
+  background: #fa801b;
   border: none;
   cursor: pointer;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+.main .ditele_info form button:hover {
+  background: #de590b;
 }
 .main .ditele_info form p {
   font-size: 20px;
@@ -1162,5 +1186,5 @@ section .main_section_two .place_command {
   gap: 10px;
 }
 .main .ditele_info form p a {
-  color: rgba(244, 149, 17, 0.5333333333);
+  color: #fa801b;
 }/*# sourceMappingURL=style.css.map */

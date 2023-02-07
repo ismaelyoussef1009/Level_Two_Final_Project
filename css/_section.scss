@@ -192,40 +192,46 @@ section{
 
                     }
                 }
+                .menu_section_text_all{
+                    margin: 35px 0 0 25px;
+                    span{
+                        font-size: 18px;
+                    } 
+                }
                 .menu_section_text{
-                    margin: 35px 0 0 21px;
+                    margin: 35px 0 0 19px;
                     span{
                         font-size:18px;
                     }
                     
                 }
                 .man_menu_section_text{
-                    margin: 35px 0 0 16px;
-                    span{
-                        font-size: 18px;
-                    }
-                }
-                .Barbecue_menu_section_text{
                     margin: 35px 0 0 10px;
                     span{
                         font-size: 18px;
                     }
                 }
+                .Barbecue_menu_section_text{
+                    margin: 35px 0 0 5px;
+                    span{
+                        font-size: 17px;
+                    }
+                }
                 .fish_menu_section_text{
-                    margin: 35px 0 0 14px;
+                    margin: 35px 0 0 8px;
                     span{
                         font-size: 18px;
                     }
                 }
                 .Shrimp_menu_section_text{
-                    margin: 35px 0 0 23px;
+                    margin: 35px 0 0 19px;
                     span{
                         font-size: 18px;
                     }
                 }
 
                 .drinks_menu_section_text{
-                    margin: 35px 0 0 18px;
+                    margin: 35px 0 0 15px;
                     span{
                         font-size: 18px;
                     }
@@ -532,22 +538,36 @@ section{
                 margin: 19% 0 0 17%;
                 border-radius: 10px;
                 font-size: 25px;
-                background: $mainColorTree;
+                background: $buttonColorTwo;
                 border: none;
                 @include button;
                 font-weight: 700;
                 color: $mainColorTwo; 
+                &:hover{
+                    background: $h1Color;
+                }
             }
             
         }
         .place_command{
-            background: red;
+            background: $pColor;
             margin-top: 120px;
             margin-left: 9px;
             width: 96%;
-            height: 80vh;
+            height: 113vh;
             border-radius: 8px;
             text-align: center;
+            .title{
+                width: 100%;
+                height: 40vh;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            // .items{
+            //     wi
+            // }
         }
     }
 }

@@ -114,7 +114,7 @@
             // box-shadow: 0 0 28px  rgba(237, 14, 14, 0.838);
             h1{
                 font-size: 40px;
-                color: $mainColorOne;
+                color: $buttonColorTwo;
                 margin-top: 50px;
                 margin-bottom: 60px;
 
@@ -126,16 +126,19 @@
                 padding-left: 7px;
                 align-items: center;
                 font-size: 25px;
-                /* background: red; */
+                // background: red;
+                i{
+                    color: $mainColorTwo;
+                }
             }
             input{
 
                 width: 70%;
                 height: 10%;
                 margin: 5% 0 0 1%;
-                padding-left: 50px;
+                padding-left: 60px;
                 border-radius: 10px;
-                background: rgba(18, 127, 210, 0.399);
+                background: $pColor;
                 // background: rgba(251, 171, 22, 0.43);
                 border: none;
                 font-size: 20px;
@@ -162,11 +165,14 @@
                 margin: 7% 0 0 2.8%;
                 border-radius: 10px;
                 font-size: 25px;
-                background: rgba(203, 119, 10, 0.43);
+                background: $buttonColorTwo;
                 border: none;
                 @include button;
                 font-weight: 700;
                 color: $mainColorTwo;
+                &:hover{
+                    background: $h1Color;
+                }
             }
             p{
                 // position: absolute;
@@ -175,7 +181,7 @@
                 letter-spacing: 1px;
                 gap: 10px;
                 a{
-                    color:$mainColorOne;
+                    color:$buttonColorTwo;
                 }
             }
         }
